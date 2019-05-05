@@ -17,7 +17,7 @@ if not tf.test.gpu_device_name():
 else:
     print('Default GPU Device: {}'.format(tf.test.gpu_device_name()))
 
-KEEP_PROB = 0.8
+KEEP_PROB = 0.5
 LEARNING_RATE = 0.0003
 
 def load_vgg(sess, vgg_path):
@@ -175,8 +175,8 @@ def run():
     # You'll need a GPU with at least 10 teraFLOPS to train on.
     #  https://www.cityscapes-dataset.com/
 
-    epochs = 20
-    batch_size = 50
+    epochs = 10
+    batch_size = 10
 
     with tf.Session() as sess:
         # Path to vgg model

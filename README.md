@@ -1,20 +1,31 @@
 # Semantic Segmentation
 
-Goal of this project is to label the pixels of a road in images a Fully Convolutional Network. Layers 3, 4 and 7 of VGG16 are utilized in creating skip layers for a fully convolutional network.
+#### Aim of this project is to label the pixels of a road in images using a Fully Convolutional Network. Layers 3, 4 and 7 of VGG16 are utilized in creating skip layers for a fully convolutional network.
 
 [image1]: ./output_examples/um_000000.png
 [image2]: ./output_examples/um_000001.png
 [image3]: ./output_examples/um_000002.png
 [image4]: ./output_examples/um_000003.png
-[image5]: ./output_examples/um_000004.png
 
 Few sample output images:
 
-![sample][image1]
-![sample][image2]
-![sample][image3]
-![sample][image4]
+| | |
+|:---------------:|:-----------------:|
+![sample][image1] | ![sample][image2]
+![sample][image3] | ![sample][image4]
 
+### Hyperparameters
+
+Following hyperparameters are utilized in this project:
+
+
+| Hyperparameter  | Value             |
+|:---------------:|:-----------------:|
+Keep Probability  | 0.5
+Learning Rate     | 0.0003
+Regularizer       | L2 Regularizer
+Epochs            | 10
+Batch Size        | 10
 
 
 # Udacity Instructions
